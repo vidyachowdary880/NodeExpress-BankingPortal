@@ -9,6 +9,6 @@ app.use(express.static(path.join(__dirname,'public')));
 
 app.get('/',(req,res)=>res.render('index',{title:'Index'}));
 
-app.listen('3000',(req,res)=>
+app.listen('3000',()=>
 console.log("listening on 3000"));
 
